@@ -1,0 +1,163 @@
+:root {
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* main BG */
+    --DarkNavyBlue: hsl(217, 54%, 11%);
+    /* Card BG */
+    --VeryDarkBlue: hsl(216, 50%, 16%);
+    /* line */
+    --BlueGrey: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* Font Weights: 300, 400, 600 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Outfit", sans-serif;
+    color: var(--SoftBlue);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--DarkNavyBlue);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--VeryDarkBlue);
+    max-width: 35rem;
+    max-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    border-radius: 1rem;
+    flex: 1 1 0;
+    box-shadow: 0px 12px 5px var(--DarkNavyBlue);
+}
+
+.item {
+    flex: 1 1 0;
+}
+
+.equilibruim-img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.equilibruim-img:hover {
+    background: url("./images/icon-view.svg") var(--Cyan) no-repeat;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 0.8rem;
+}
+
+.view-icon {
+    background-color: var(--Cyan);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.card img {
+    border-radius: 0.8rem;
+    max-width: 100%;
+}
+
+.header {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+.header a:hover {
+    color: var(--Cyan);
+}
+
+.content {
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.currency {
+    margin-bottom: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ethereum,
+.timeleft {
+    color: var(--Cyan);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeleft {
+    color: var(--SoftBlue);
+}
+
+.timeleft {
+}
+
+.linebreak {
+    background-color: var(--BlueGrey);
+    height: 1px;
+}
+
+.author-container {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+.author-img {
+    width: 20%;
+    height: 2rem;
+}
+
+.author {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.author:hover {
+    color: var(--Cyan);
+}
+
+.author-container img {
+    border-radius: 50%;
+    border: 0.1rem solid var(--White);
+    max-height: 3.5rem;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
