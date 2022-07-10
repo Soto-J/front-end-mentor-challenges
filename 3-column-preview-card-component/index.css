@@ -23,7 +23,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .card-container {
@@ -81,6 +82,7 @@ h2 {
     margin-top: 6rem;
     align-self: flex-start;
     border: 1px solid transparent;
+    transition: 0.3s;
 }
 
 .btn-learn-more:hover {
@@ -117,31 +119,30 @@ h2 {
 @media (max-width: 46.875em) {
     .card-container {
         flex-direction: column;
+        max-width: 15rem;
     }
 
     .item-content {
-      max-height: 20rem;
-      max-width: 15rem;
-      padding: 2rem;
+        padding: 2rem;
     }
 
     img {
-      max-height: 2.2rem;
+        max-height: 2.2rem;
     }
 
     h2 {
-      margin-top: 1.1rem;
-      font-size: 1.8rem;
+        margin-top: 1.1rem;
+        font-size: 1.8rem;
     }
 
     .description {
-      margin-top: .4rem;
-      font-size: .8rem;
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
     }
 
     .btn-learn-more {
-      margin-top: .8rem;
-      font-size: .8rem;
-      padding: .4rem 1rem;
+        margin-top: 0.8rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
     }
 }

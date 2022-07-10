@@ -48,9 +48,14 @@ body {
 
 .star-img {
     background-color: var(--DarkishBlue);
-    padding: 1rem;
+    padding: 1.2rem;
     align-self: flex-start;
     border-radius: 50%;
+    text-align: center;
+}
+
+.star-img img {
+    width: 100%;
 }
 
 .header {
@@ -69,16 +74,18 @@ body {
     list-style: none;
     display: flex;
     text-align: center;
-    gap: 2.2rem;
+    gap: 2rem;
     margin-top: 1.2rem;
     cursor: pointer;
 }
 
 .numbers li {
+    width: 100%;
     background-color: var(--DarkishBlue);
-    padding: 1.2rem;
+    padding: 1.3rem;
     border-radius: 50%;
     flex: 1 1 0;
+    transition: .3s;
 }
 
 .numbers li:hover {

@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - Profile card component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -22,12 +22,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### The challenge
 
-Users should be able to:
-
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- Build out the project to the designs provided
 
 ### Screenshot
 

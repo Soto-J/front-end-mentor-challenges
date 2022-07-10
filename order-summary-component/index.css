@@ -1,7 +1,9 @@
 :root {
     --PaleBlue: hsl(225, 100%, 94%);
     --BrightBlue: hsl(245, 75%, 52%);
+    /*  */
     --LightBrightBlue: hsl(247, 42%, 65%);
+    /*  */
     --VeryPaleBlue: hsl(225, 100%, 98%);
     --DesaturatedBlue: hsl(224, 23%, 55%);
     --DarkBlue: hsl(223, 47%, 23%);
@@ -20,7 +22,7 @@ html {
 
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,10 +46,11 @@ body {
     flex: 1;
     max-width: 30rem;
     max-height: 60rem;
+    background-color: 1 ;
 }
 
 .image img {
-    max-width: 30rem;
+    width: 100%;
 }
 
 .content {
@@ -124,13 +127,14 @@ body {
     padding: 8px;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0px 6px 6px var(--PaleBlue);
+    box-shadow: 0px .8rem .8rem var(--PaleBlue);
+    transition: .3s;
 }
 
 .btn-payment:hover {
-    background-color: var(--LightBrightBlue);
+    filter: brightness(200%);
+    box-shadow: 0px 6px 6px var(--PaleBlue);
 }
-
 .btn-cancel {
     font-size: 1.2rem;
     text-decoration: none;
@@ -151,3 +155,5 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+

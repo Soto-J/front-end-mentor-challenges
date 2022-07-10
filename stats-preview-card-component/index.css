@@ -21,6 +21,7 @@ html {
 
 body {
     font-size: 1.5rem;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,40 +32,31 @@ body {
 }
 
 .card-container {
-    background-color: var(--DarkDesaturatedBlue);
-    max-width: 70rem;
-    max-height: 25rem;
+    max-width: 60rem;
+}
+
+.card {
+    border : 1px solid red;
+    display: flex;
+    /* align-items: center; */
     border-radius: 0.8rem;
     overflow: hidden;
 }
 
-.card {
-    display: flex;
-    width: 100%;
-}
-
 .section {
     flex: 1 1 0;
-    /* flex-basis: 100%; */
 }
 
 .content {
+    border : 1px solid red;
     background-color: var(--DarkDesaturatedBlue);
-    margin: 5rem;
-    margin-right: 8rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 0;
+    padding: 5rem;
+    padding-right: 5.7rem;
 }
 
 .content-header {
-    width: 100%;
     font-weight: 700;
     color: var(--White);
-}
-
-.content-header h1 {
-    /* width: 100%; */
 }
 
 .content-header span {
@@ -75,27 +67,31 @@ body {
     font-size: 1rem;
     font-weight: 400;
     color: var(--SlightlyTransparentWhiteMain);
-    line-height: 1.6;
-    margin-top: 2rem;
+    line-height: 1.8;
+    margin-top: 2.2rem;
 }
 
-.content-footer {
-    text-transform: uppercase;
+.stats-list {
     color: var(--SlightlyTransparentWhiteStat);
     display: flex;
-    flex: 1 1 0;
-    align-items: flex-end;
-    column-gap: 6rem;
+    align-items: center;
+    column-gap: 3.5rem;
+    margin-top: 5.2rem;
+    list-style: none;
 }
 
-.footer-stats {
-    font-size: 1.4rem;
+.stats-list h3 {
+    color: var(--SlightlyTransparentWhiteMain);
     font-weight: 700;
-    margin-bottom: 0.6rem;
 }
 
-.content-footer span {
-    font-size: 1.1rem;
+.stats-item {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.stats-item > div {
+    font-size: 1rem;
 }
 
 .picture {
@@ -115,9 +111,8 @@ body {
 }
 
 .section img {
-    height: 100%;
     width: 100%;
-    opacity: 0.5;
+    min-height: 100%;
 }
 
 .attribution {
@@ -130,9 +125,8 @@ body {
 .attribution a {
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .card-container {
-        max-height: 100%;
         max-width: 20rem;
     }
 
@@ -144,7 +138,6 @@ body {
     .content {
         margin: 2rem;
         align-items: center;
-        /* row-gap: 0; */
     }
 
     .content-header {
@@ -175,4 +168,4 @@ body {
         font-size: 1rem;
         margin-top: 0.8rem;
     }
-}
+} */
