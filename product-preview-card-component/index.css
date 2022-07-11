@@ -1,3 +1,16 @@
+:root {
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --ff-Montserrat: "Montserrat", sans-serif;
+    --ff-Fraunces: "Fraunces", sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,65 +22,70 @@ html {
 }
 
 .card-container {
-    background-color: hsl(30, 38%, 92%);
     min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    font-size: 1.4rem;
+    background-color: var(--Cream);
+    font-family: var(--ff-Fraunces);
 }
 
 .card {
+    border: 1px solid red;
     display: flex;
-    max-width: 40rem;
+    max-width: 50%;
+    border-radius: 0.6rem;
 }
 
+.img-container {
+    /* flex-basis: 100%; */
+    /* width: 100%; */
+}
 .img-container img {
-    max-height: 30rem;
-    max-width: 20rem;
-    border-radius: 6px 0 0 6px;
+    width: 100%;
+    border-radius: 0.6rem 0 0 0.6rem;
 }
 
 .content {
-    max-width: 20rem;
-    max-height: 30rem;
+    /* flex-basis: 100%; */
+    width: 100%;
     font-size: 1.4rem;
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(228, 12%, 48%);
-    border-radius: 0 6px 6px 0;
-    padding: 1.6rem;
+    background-color: var(--White);
+    color: var(--DarkGrayishBlue);
+    border-radius: 0 0.6rem 0.6rem 0;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    row-gap: 1.8rem;
-    flex-shrink: 0;
+    justify-content: space-between;
+    row-gap: 1rem;
 }
 
 .header div {
-    font-family: "Fraunces", sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 2.5px;
     margin-bottom: 0.8rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .header h1 {
-    color: hsl(212, 21%, 14%);
-    line-height: 0.9;
-    font-size: 2.4rem;
+    color: var(--VeryDarkBlue);
+    line-height: 1.1;
+    font-size: 2.7rem;
 }
 
 .description {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-family: var(--ff-Montserrat);
+    /* font-size: 1rem; */
     font-weight: 500;
-    color: hsl(228, 12%, 48%);
+    color: var(--DarkGrayishBlue);
     line-height: 1.4;
 }
 
 .price {
-    font-family: "Fraunces", sans-serif;
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 0.8rem;
@@ -76,29 +94,35 @@ html {
 }
 
 .price-new {
-    color: hsl(158, 36%, 37%);
+    color: var(--DarkCyan);
 }
 
 .price-old {
     align-self: center;
     font-size: 0.8rem;
     text-decoration: line-through;
-    color: hsl(228, 12%, 48%);
+    color: var(--DarkGrayishBlue);
 }
 
 .btn-add-to-cart {
+    background-color: var(--DarkCyan);
+    color: var(--White);
     font-size: 1.2rem;
-    background-color: hsl(158, 36%, 37%);
-    color: hsl(0, 0%, 100%);
     padding: 1rem 2.4rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     justify-items: flex-start;
+    transition: 0.3s;
+}
+
+.btn-add-to-cart:hover {
+    filter: brightness(80%);
 }
 
 .attribution {
     font-size: 1.1rem;
     text-align: center;
+    margin-top: 1.2rem;
 }
 
 .attribution a {
