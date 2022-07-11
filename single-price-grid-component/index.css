@@ -105,6 +105,7 @@ body {
 .btn-sign-up {
     background-color: var(--BrightYellow);
     color: var(--LightGray);
+    box-shadow: 0 .2rem 1.4rem #777;
     border: none;
     border-radius: 0.4rem;
     padding: 1.2rem;
@@ -138,17 +139,15 @@ body {
     font-size: 1.2rem;
     text-align: center;
     margin-top: 1.2rem;
-  }
-  .attribution a {
+}
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
-  
-  @media (max-width: 31.25em) {
-    .body {
-      background-color: red;
-    }
+}
+
+@media (max-width: 31.25em) {
     .card {
-      grid-template-rows: 1fr;
-      
-  }
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+    }
 }
