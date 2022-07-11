@@ -60,7 +60,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 1rem;
 }
 
 .header div {
