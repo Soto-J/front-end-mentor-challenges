@@ -35,25 +35,24 @@ body {
 
 .card-container {
     max-width: 60rem;
+    
 }
 
 .card {
-    border : 1px solid red;
     display: flex;
-    /* align-items: center; */
     border-radius: 0.8rem;
     overflow: hidden;
 }
 
 .section {
-    flex: 1 1 0;
+    flex: 1 1 25rem;
 }
 
 .content {
-    border : 1px solid red;
+    width: 100%;
     background-color: var(--DarkDesaturatedBlue);
-    padding: 5rem;
-    padding-right: 5.7rem;
+    padding: 4rem;
+    padding-right: 6rem;
 }
 
 .content-header {
@@ -99,6 +98,7 @@ body {
 
 .picture {
     position: relative;
+    object-fit: cover;
 }
 
 .picture::before {
@@ -119,7 +119,7 @@ body {
 }
 
 .attribution {
-    font-size: 1.1rem;
+    font-size: 1.12rem;
     text-align: center;
     color: var(--SlightlyTransparentWhiteStat);
     margin-top: 1.2rem;
