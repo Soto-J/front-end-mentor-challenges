@@ -60,7 +60,7 @@ body {
 .equilibruim-img:hover::before {
     content: "";
     cursor: pointer;
-    background: url(./images/icon-view.svg) var(--Cyan);
+    background: no-repeat url(./images/icon-view.svg) var(--Cyan);
     position: absolute;
     z-index: 999;
     top: 50%;
@@ -69,6 +69,7 @@ body {
     min-height: 100%;
     width: 100%;
     border-radius: 0.8rem;
+    opacity: .6;
 }
 
 .view-icon {
