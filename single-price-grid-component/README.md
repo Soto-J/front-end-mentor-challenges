@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Screenshot](./design/Screenshot-Desktop-Single-Price-Grid-Component.png)
+![Mobile Screenshot](./design/Screenshot-Mobile-Single-Price-Grid-Component.png)
 
 ### Links
 
@@ -54,4 +55,3 @@ Users should be able to:
 
 -   Website - [John Soto](https://github.com/Soto-J)
 -   Frontend Mentor - [@Soto-J](https://www.frontendmentor.io/profile/Soto-J)
--   Twitter - [@yourusername](https://www.twitter.com/yourusername)
