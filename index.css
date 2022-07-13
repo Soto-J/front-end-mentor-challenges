@@ -73,6 +73,7 @@ body {
 
 @media (max-width: 28.125em) {
     .card {
+        font-size: 2rem;
         grid-template-columns: 1fr;
     }
 

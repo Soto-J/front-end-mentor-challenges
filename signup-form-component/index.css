@@ -114,6 +114,10 @@ body {
     gap: 1.8rem;
 }
 
+.input-container {
+    position: relative;
+}
+
 .input {
     padding: 1.4rem;
     border: 0.1px solid var(--GrayishBlue);
@@ -127,7 +131,14 @@ body {
 
 .invalid {
     border: 0.15rem solid var(--Red);
+}
+
+.invalid-icon {
+    display: none;
     background: no-repeat url("./images/icon-error.svg");
+    position: absolute;
+    right: 3%;
+    top: 20%;
 }
 
 .invalid-msg {
