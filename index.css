@@ -19,44 +19,70 @@ body {
     font-size: 2.4rem;
     min-height: 95vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.components {
+.card {
     margin-top: 2rem;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
 }
 
-.components li {
+.card li {
     margin-top: 0.4rem;
 }
 
-.list {
-    background-color: #fff;
-    margin-top: 1rem;
-    list-style: none;
-    padding: 2rem 4rem;
-    border-radius: 0.8rem;
+.header {
+    grid-column: span 2;
 }
 
-.list a {
+.section {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 3rem;
+}
+
+.section ul {
+    margin-top: 1rem;
+    /* padding: 2rem 4rem; */
+    border-radius: 0.8rem;
+    list-style: none;
+}
+
+.section a {
     text-decoration: none;
     color: #777;
     transition: 0.3s;
 }
 
-.list a:hover {
+.section a:hover {
     color: orangered;
 }
 
-@media (max-width: 25em) {
-    body {
-        font-size: 2rem;
+.list-components {
+}
+
+@media (max-width: 40em) {
+    .card {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 28.125em) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        grid-column: 1;
+    }
+
+    .section {
+        padding: 1.8rem;
+    }
+    .components {
     }
 }
