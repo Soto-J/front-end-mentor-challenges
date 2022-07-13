@@ -1,4 +1,10 @@
-* {
+:root {
+    --Cream: #f2ebe3;
+}
+
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,6 +15,7 @@ html {
 }
 
 body {
+    background-color: var(--Cream);
     font-size: 1.8rem;
     min-height: 95vh;
     display: flex;
@@ -23,7 +30,7 @@ body {
 }
 
 .components li {
-    margin-top: .4rem;
+    margin-top: 0.4rem;
 }
 
 .list {
