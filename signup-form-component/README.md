@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution URL](https://your-solution-url.com)
--   [Live Site URL](https://your-live-site-url.com)
+-   [Solution URL](https://github.com/Soto-J/front-end-mentor-challenges/tree/master/signup-form-component)
+-   [Live Site URL](https://soto-j.github.io/front-end-mentor-challenges/signup-form-component/)
 
 ## My process
 
