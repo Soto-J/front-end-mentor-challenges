@@ -16,7 +16,7 @@ html {
 
 body {
     background-color: var(--Cream);
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     min-height: 95vh;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ body {
     margin-top: 1rem;
     list-style: none;
     padding: 2rem 4rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
 }
 
 .list a {
@@ -55,8 +55,8 @@ body {
     color: orangered;
 }
 
-@media (max-width:17.1875em) {
+@media (max-width: 25em) {
     body {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 }
