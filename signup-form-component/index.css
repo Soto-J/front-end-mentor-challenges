@@ -176,7 +176,7 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 35em) {
+@media (max-width: 56.25em) {
     .card {
         text-align: center;
         margin: 6rem 3rem;
