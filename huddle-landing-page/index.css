@@ -62,7 +62,7 @@ body {
     font-family: var(--ff-OpenSans);
     font-weight: 400;
     color: var(--Violet);
-    box-shadow: 0 .2rem .4rem var(--VioletShadow);
+    box-shadow: 0 0.2rem 0.4rem var(--VioletShadow);
     padding: 1rem 7rem;
     border: none;
     border-radius: 3rem;
@@ -72,8 +72,8 @@ body {
 }
 
 .logo-icons {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 ion-icon {
@@ -90,7 +90,8 @@ ion-icon {
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: orange;
+    /* color: hsl(228, 45%, 44%); */
 }
 
 @media (min-width: 23.4375em) {
@@ -134,7 +135,7 @@ ion-icon {
     }
 
     .description {
-      margin-top: 2.2rem;
+        margin-top: 2.2rem;
         font-size: 1.8rem;
     }
 
@@ -147,9 +148,9 @@ ion-icon {
         grid-column: -2;
         justify-content: flex-end;
         padding-right: 5rem;
-      }
-      
-      .logo-icons ion-icon {
+    }
+
+    .logo-icons ion-icon {
         cursor: pointer;
         transition: 0.3s;
     }
