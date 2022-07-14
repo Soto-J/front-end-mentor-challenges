@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./design/Screenshot-Desktop-Frontend-Mentor-3-column-preview-card-component.png)
-![Movile](./design/Screenshot-Mobile-Frontend-Mentor-3-column-preview-card-component.png)
+![Desktop](./design/Screenshot-Desktop-3-column-preview-card-component.png)
+![Movile](./design/Screenshot-Mobile-3-column-preview-card-component.png)
 
 ### Links
 
@@ -44,12 +44,12 @@ Users should be able to:
 
 ### What I learned
 
-Added CSS custom properties (Color).
+- Added CSS custom properties (Color).
 
 ### Continued development
 
-Will like to come back and make component more responsive
-
+- Will like to come back and make component more responsive
+  - Remastered using BEM
 ## Author
 
 - Website - [John Soto](https://github.com/Soto-J)

@@ -44,7 +44,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 2.8rem;
-    /* flex-basis: 100%; */
     flex: 1 1 0;
 }
 
@@ -57,25 +56,24 @@ body {
     font-family: var(--ff-BigShouldersDisplay);
     font-weight: 700;
     color: var(--VeryLightGray);
-    /* font-size: 3.2rem; */
 }
 
 .card__description {
     font-family: var(--ff-LexendDeca);
     color: var(--TransparentWhite);
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 1rem;
 }
 
 .card__btn {
     font-family: var(--ff-LexendDeca);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
-    background-color: var(--TransparentWhite);
+    background-color: var(--VeryLightGray);
     border: none;
     border-radius: 2rem;
     padding: 0.7rem 2rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-decoration: none;
     border: 0.1rem solid transparent;
     transition: 0.3s;
@@ -130,4 +128,20 @@ body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 46.875em) {
+    .card {
+        flex-direction: column;
+        max-width: 20rem;
+        margin-top: 4rem;
+    }
+
+    .card__section {
+        gap: 1.6rem;
+    }
+
+    .card__btn {
+        margin-top: 0rem;
+    }
 }
