@@ -1,0 +1,89 @@
+:root {
+    --Violet: #674baf;
+    --SoftMagenta: #e882e8;
+    --White: #ffffff;
+    /* Fonts */
+    --ff-Poppins: "Poppins", sans-serif;
+    --ff-OpenSans: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--White);
+    background: no-repeat url(./images/bg-mobile.svg) var(--Violet);
+    font-family: var(--ff-Poppins);
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 31rem;
+    margin: 3rem auto;
+    text-align: center;
+    gap: 5rem;
+}
+.container img {
+  width: 15rem;
+}
+
+.mockup-container img {
+    width: 100%;
+}
+
+.section-content {
+}
+
+.header {
+  font-weight: 600;
+  margin: 1.2rem;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.btn-register {
+    font-family: var(--ff-OpenSans);
+    font-weight: 400;
+    color: var(--Violet);
+    padding: 1rem 8rem;
+    border: none;
+    border-radius: 3rem;
+    margin-top: 2.2rem;
+}
+
+.logo-icons {
+  
+}
+
+ion-icon {
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  color: var(--White);
+  padding: .6rem;
+  margin: 0 .5rem;
+}
+
+.attribution {
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
