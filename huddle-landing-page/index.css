@@ -13,7 +13,7 @@
 *::before {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
@@ -27,6 +27,8 @@ body {
     min-height: 90vh;
     width: 100%;
     font-size: 1.6rem;
+
+    box-sizing: border-box;
 }
 
 .container {
