@@ -1,19 +1,19 @@
 :root {
-    --SoftBlue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
+    --SoftBlue: #8cacd9;
+    --Cyan: #00fff7;
+    --Cyan-filter: rgba(0, 255, 247, 0.473);
 
-    /* main BG */
-    --DarkNavyBlue: hsl(217, 54%, 11%);
-    /* Card BG */
-    --VeryDarkBlue: hsl(216, 50%, 16%);
-    /* line */
-    --BlueGrey: hsl(215, 32%, 27%);
-    --White: hsl(0, 0%, 100%);
+    --bg-main-VeryDarkBlue: #0d192b;
+    --bg-card-VeryDarkBlue: #14253d;
+    --br-BlueGrey: #2f415b;
+    --White: #ffffff;
 }
 
 /* Font Weights: 300, 400, 600 */
 
-* {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -22,12 +22,13 @@
 html {
     font-size: 62.5%;
     font-family: "Outfit", sans-serif;
-    color: var(--SoftBlue);
 }
 
 body {
     min-height: 100vh;
-    background-color: var(--DarkNavyBlue);
+    width: 100%;
+    background-color: var(--bg-main-VeryDarkBlue);
+    color: var(--SoftBlue);
     font-size: 1.8rem;
     display: flex;
     flex-direction: column;
@@ -36,127 +37,120 @@ body {
 }
 
 .card {
-    background-color: var(--VeryDarkBlue);
     max-width: 35rem;
-    max-height: 60rem;
+    background-color: var(--bg-card-VeryDarkBlue);
     display: flex;
     flex-direction: column;
-    padding: 2.4rem;
+    border-radius: 1.2rem;
+    padding: 2.2rem;
+    gap: 1.2rem;
+}
+
+.card__image-logo {
     border-radius: 1rem;
-    flex: 1 1 0;
-    box-shadow: 0px 12px 5px var(--DarkNavyBlue);
-}
-
-.item {
-    flex: 1 1 0;
-}
-
-.equilibruim-img {
-    width: 100%;
-    object-fit: cover;
+    overflow: hidden;
     position: relative;
 }
 
-.equilibruim-img:hover::before {
-    content: "";
+.equilibrium-image {
+    width: 100%;
+    display: block;
+}
+
+.view-icon-overlay {
+    background-color: var(--Cyan-filter);
     cursor: pointer;
-    background: no-repeat url(./images/icon-view.svg) var(--Cyan);
     position: absolute;
-    z-index: 999;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 100%;
-    width: 100%;
-    border-radius: 0.8rem;
-    opacity: .6;
+    padding: 100%;
+    transition: .2s;
+    opacity: 0;
 }
 
-.view-icon {
-    background-color: var(--Cyan);
-    position: absolute;
-    top: 50%;
-    right: 50%;
+.view-icon-overlay:hover {
+    opacity: 1;
+}
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
 }
 
-.card img {
-    border-radius: 0.8rem;
-    max-width: 100%;
+.card__header {
+    margin-top: 2.2rem;
 }
 
-.header {
-    margin-top: 2rem;
-    font-size: 2.4rem;
-    font-weight: 600;
-}
-
-.header a {
-    text-decoration: none;
+.card__header a {
     color: var(--White);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
 }
-
-.header a:hover {
+.card__header a:hover {
     color: var(--Cyan);
 }
 
-.content {
-    font-weight: 400;
-    margin-bottom: 1.2rem;
+.card__description {
+    font-weight: 300;
 }
 
-.currency {
-    margin-bottom: 1.4rem;
+.card__currency-time {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.ethereum,
-.timeleft {
-    color: var(--Cyan);
+.currency-time--display {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.timeleft {
-    color: var(--SoftBlue);
-}
-
-.timeleft {
-}
-
-.linebreak {
-    background-color: var(--BlueGrey);
-    height: 1px;
-}
-
-.author-container {
-    font-size: 1.4rem;
-    margin-top: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 2.2rem;
-}
-
-.author-img {
-    width: 20%;
-    height: 2rem;
-}
-
-.author {
-    color: var(--White);
-    text-decoration: none;
-}
-
-.author:hover {
+.card__currency {
     color: var(--Cyan);
 }
 
-.author-container img {
-    border-radius: 50%;
+.equilibrium-logo {
+}
+
+.equilibrium-currency {
+}
+
+.card__time-left {
+}
+
+.time-left {
+}
+
+.card__linebreak {
+    height: .08rem;
+    background-color: var(--SoftBlue);
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__author-img {
+    width: 3rem;
     border: 0.1rem solid var(--White);
-    max-height: 3.5rem;
+    border-radius: 50%;
+}
+
+.card__author-title {
+}
+
+.author-name {
+    color: var(--White);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.author-name:hover {
+    color: var(--Cyan);
 }
 
 .attribution {
@@ -164,7 +158,12 @@ body {
     text-align: center;
     margin-top: 1.2rem;
 }
-
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 28.125em) {
+  html {
+    font-size: 50%;
+  }
 }

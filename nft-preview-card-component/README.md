@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/Screenshot-Frontend-Mentor-NFT-preview-card-component.png)
+![Desktop](./design/Screenshot-Desktop-NFT-preview-card.png)
+![Mobile](./design/Screenshot-Mobile-NFT-preview-card.png)
 
 ### Links
 
@@ -48,6 +49,8 @@ Users should be able to:
 ### Continued development
 
 -   I will like to continue taking on more projects envolving image overlays.
+
+-   Remastered using BEM and learned how to implement overlay
 
 ## Author
 

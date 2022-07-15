@@ -20,31 +20,57 @@
     </head>
     <body>
         <main class="card">
-            <div class="item equilibruim-img">
-                <img src="./images/image-equilibrium.jpg" alt="Equilibrium" />
-            </div>
-            <h1 class="item header"><a href="#">Equilibrium #3429</a></h1>
-            <p class="item content">
-                Our Equilibrium collection promotes balance and calm.
-            </p>
-            <div class="item currency">
-                <div class="ethereum">
-                    <img src="./images/icon-ethereum.svg" alt="Ethereum Icon" />
-                    <span>0.041 ETH</span>
-                </div>
-                <div class="timeleft">
-                    <img src="./images/icon-clock.svg" alt="Clock Icon" />
-                    <span>3 days left</span>
-                </div>
-            </div>
-            <div class="linebreak"></div>
-            <footer class="item author-container">
-                <img src="./images/image-avatar.png" alt="Jules Wyvern" />
+            <picture class="card__image-logo">
+                <img
+                    src="./images/image-equilibrium.jpg"
+                    alt="Equilibrium"
+                    class="equilibrium-image"
+                />
+                <img
+                    src="./images/icon-view.svg"
+                    alt="View Icon"
+                    class="view-icon-overlay"
+                />
+            </picture>
 
-                <div>
-                    Creation of <a href="#" class="author"> Jules Wyvern </a>
+            <section class="card__content">
+                <h1 class="card__header"><a href="#">Equilibrium #3429</a></h1>
+
+                <p class="card__description">
+                    Our Equilibrium collection promotes balance and calm.
+                </p>
+
+                <div class="card__currency-time">
+                    <div class="card__currency | currency-time--display">
+                        <img
+                            src="./images/icon-ethereum.svg"
+                            alt="Ethereum Icon"
+                            class="equilibrium-logo"
+                        />
+                        <span class="equilibrium-currency">0.041 ETH</span>
+                    </div>
+                    <div class="card__time-left | currency-time--display">
+                        <img src="./images/icon-clock.svg" alt="Clock Icon" />
+                        <span class="time-left">3 days left</span>
+                    </div>
                 </div>
-            </footer>
+
+                <div class="card__linebreak"></div>
+
+                <footer class="card__author">
+                    <img
+                        src="./images/image-avatar.png"
+                        alt="Jules Wyvern"
+                        class="card__author-img"
+                    />
+
+                    <div class="card__author-title">
+                        Creation of<a href="#" class="author-name">
+                            Jules Wyvern</a
+                        >
+                    </div>
+                </footer>
+            </section>
         </main>
 
         <footer class="attribution">
@@ -53,7 +79,7 @@
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
-            >. Coded by <a href="#">John Soto</a>.
+            >. Coded by <a href="#" target="_blank">John Soto</a>.
         </footer>
     </body>
 </html>
