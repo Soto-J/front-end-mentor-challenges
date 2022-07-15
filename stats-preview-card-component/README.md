@@ -12,9 +12,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
     -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,12 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/Screenshot-Frontend-Mentor-Stats-preview-card-component.png)
+![Desktop](./design/Screenshot-Desktop-stats-preview-card.png)
+![Mobile](./design/Screenshot-Mobile-stats-preview-card.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [URL](https://github.com/Soto-J/front-end-mentor-challenges/tree/master/stats-preview-card-component)
+-   Live Site URL: [URL](https://soto-j.github.io/front-end-mentor-challenges/stats-preview-card-component/)
 
 ## My process
 
@@ -40,6 +39,7 @@ Users should be able to:
 -   Semantic HTML5 markup
 -   CSS custom properties
 -   Flexbox
+-   CSS Grid
 
 ### What I learned
 
@@ -50,8 +50,11 @@ Users should be able to:
 
 ### Continued development
 
-I plan on returning to this challenge when i have a better
-understanding of how images behave in flexbox.
+-   I plan on returning to this challenge when i have a better
+    understanding of how images behave in flexbox.
+
+-   Remaster challenge
+    -   Had difficulties resizing image.
 
 ## Author
 

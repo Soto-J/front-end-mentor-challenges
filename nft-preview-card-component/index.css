@@ -7,6 +7,8 @@
     --bg-card-VeryDarkBlue: #14253d;
     --br-BlueGrey: #2f415b;
     --White: #ffffff;
+
+    --ff-Outift: "Outfit", sans-serif;
 }
 
 /* Font Weights: 300, 400, 600 */
@@ -21,7 +23,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Outfit", sans-serif;
+    font-family: var(--ff-Outift);
 }
 
 body {
@@ -65,7 +67,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 100%;
-    transition: .2s;
+    transition: 0.2s;
     opacity: 0;
 }
 
@@ -86,7 +88,7 @@ body {
     color: var(--White);
     text-decoration: none;
     font-weight: 600;
-    transition: .3s;
+    transition: 0.3s;
 }
 .card__header a:hover {
     color: var(--Cyan);
@@ -124,7 +126,7 @@ body {
 }
 
 .card__linebreak {
-    height: .08rem;
+    height: 0.08rem;
     background-color: var(--SoftBlue);
 }
 
@@ -163,7 +165,7 @@ body {
 }
 
 @media (max-width: 28.125em) {
-  html {
-    font-size: 50%;
-  }
+    html {
+        font-size: 50%;
+    }
 }

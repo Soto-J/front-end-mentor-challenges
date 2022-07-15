@@ -23,45 +23,39 @@
 
         <title>Frontend Mentor | Stats preview card component</title>
     </head>
-    <body class="card-container">
+    <body>
         <main class="card">
-            
-            <section class="content section">
-                <header class="content-header | test">
-                    <h1>
-                        Get <span>insights</span> that help your business grow.
-                    </h1>
-                </header>
-                <p class="content-description | test">
+            <section class="card__section | card__section--content">
+                <h1 class="card__header">Get <span>insights</span> that help your business grow.</h1>
+                <p class="content-description">
                     Discover the benefits of data analytics and make better
                     decisions regarding revenue, customer experience, and
                     overall efficiency.
                 </p>
-                <footer class="test">
-                    <ul class="stats-list">
-                        <li class="stats-item">
-                            <h3>10k+</h3>
-                            <div>Companies</div>
-                        </li>
-                        <li class="stats-item">
-                            <h3>314</h3>
-                            <div>Templates</div>
-                        </li>
-                        <li class="stats-item">
-                            <h3>12M+</h3>
-                            <div>Queries</div>
-                        </li>
-                    </ul>
-                </footer>
+
+                <ul class="card__stats">
+                    <li class="stats">
+                        <h3 class="stats--sub-header">10k+</h3>
+                        <p>Companies</p>
+                    </li>
+                    <li class="stats">
+                        <h3 class="stats--sub-header">314</h3>
+                        <p>Templates</p>
+                    </li>
+                    <li class="stats">
+                        <h3 class="stats--sub-header">12M+</h3>
+                        <p>Queries</p>
+                    </li>
+                </ul>
             </section>
 
-            <section class="picture section">
+            <section class="card__section | card__section--image card__section--overlay">
                 <img
                     src="./images/image-header-desktop.jpg"
-                    alt="People on Computer Picture."
+                    alt="People on Computer."
+                    class="image"
                 />
             </section>
-        
         </main>
         <footer>
             <div class="attribution">
@@ -70,7 +64,9 @@
                     href="https://www.frontendmentor.io?ref=challenge"
                     target="_blank"
                     >Frontend Mentor</a
-                >. Coded by <a href="#">John Soto</a>.
+                >. Coded by
+                <a href="https://github.com/Soto-J" target="_blank">John Soto</a
+                >.
             </div>
         </footer>
     </body>
