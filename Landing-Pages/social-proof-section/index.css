@@ -24,13 +24,66 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    background: no-repeat url(./images/bg-pattern-top-desktop.svg);
     font-family: var(--ff-LeagueSpartan);
     font-size: 1.5rem;
 }
 
+.main {
+
+}
+
+.main__header {
+
+}
+
+.header {
+
+}
+
+.description {
+
+}
+
+.main__rating {
+
+}
+
+.rating {
+
+}
+
+.main__testimony-cards {
+
+}
+
+.card {
+
+}
+
+.card__header-secondary {
+
+}
+
+.card-image {
+
+}
+
+.header-secondary {
+
+}
+
+.testimony {
+    
+}
+
+
 .attribution {
-    font-size: 11px;
+    font-size: 1.42rem;
     text-align: center;
+    margin-top: 1.2rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
