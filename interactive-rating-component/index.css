@@ -80,7 +80,7 @@ body {
 
 .card__ratings-numbers  li {
     background-color: var(--GrayishBlue);
-    color: var(--MediumGray);
+    color: var(--MediumGray);;
     padding: 1.4rem;
     border-radius: 50%;
     flex: 1 1 0;
