@@ -20,24 +20,26 @@
     </head>
     <body>
         <main class="card">
-            <div class="content star-img">
-                <img src="./images/icon-star.svg" alt="Star Icon" />
-            </div>
-            <h1 class="content header">How did we do?</h1>
-            <p class="content description">
+            <img
+                src="./images/icon-star.svg"
+                alt="Star Icon"
+                class="card__star-icon"
+            />
+            <h1 class="card__header">How did we do?</h1>
+            <p class="card__description">
                 Please let us know how we did with your support request. All
                 feedback is appreciated to help us improve our offering!
             </p>
-            <div class="content">
-                <ul class="numbers">
-                    <li class="active">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ul>
-            </div>
-            <button class="btn-submit">Submit</button>
+
+            <ul class="card__number-ratings">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+
+            <button class="card__btn-submit">Submit</button>
         </main>
         <footer class="attribution">
             Challenge by
@@ -45,7 +47,8 @@
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
-            >. Coded by <a href="#">John Soto</a>.
+            >. Coded by
+            <a href="https://github.com/Soto-J" target="_blank">John Soto</a>.
         </footer>
     </body>
     <script src="./js/main.js"></script>

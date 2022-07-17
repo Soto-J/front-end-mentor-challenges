@@ -1,14 +1,21 @@
 :root {
-    --Orange: hsl(25, 97%, 53%);
-    --White: hsl(0, 0%, 100%);
-    --LightGrey: hsl(217, 12%, 63%);
-    --MediumGrey: hsl(216, 12%, 54%);
-    --DarkishBlue: hsl(211, 20%, 21%);
-    --DarkBlue: hsl(213, 19%, 18%);
-    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: #fb7413;
+
+    --White: #ffffff;
+    --LightGray: #959eac;
+    --MediumGray: #7c8798;
+
+    --GrayishBlue: #273039;
+    /* --DarkishBlue: #2b3540; */
+    --DarkBlue: #252d37;
+    --VeryDarkBlue: #121417;
+
+    --ff-Overpass: "Overpass", sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,7 +31,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,88 +40,76 @@ body {
 
 .card {
     background-color: var(--DarkBlue);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 2.3rem;
-    border-radius: 1.4rem;
-    max-width: 36rem;
-    gap: 1.2rem;
+    padding: 2.6rem;
+    border-radius: 2.2rem;
+    max-width: 35rem;
 }
 
-.content {
-    flex: 1 1 0;
-}
-
-.star-img {
-    background-color: var(--DarkishBlue);
-    padding: 1.2rem;
-    align-self: flex-start;
+.card__star-icon {
+    padding: 1.6rem;
     border-radius: 50%;
-    text-align: center;
+    background-color: var(--GrayishBlue);
+    margin-bottom: 2rem;
 }
 
-.star-img img {
-    width: 100%;
-}
-
-.header {
-    font-size: 2.8rem;
+.card__header {
     color: var(--White);
-    margin-top: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-.description {
-    font-size: 1.4rem;
-    color: var(--LightGrey);
+.card__description {
+    color: var(--MediumGray);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 3rem;
 }
 
-.numbers {
-    color: var(--LightGrey);
-    list-style: none;
+.card__number-ratings {
     display: flex;
+    list-style: none;
     text-align: center;
-    gap: 2rem;
-    margin-top: 1.2rem;
-    cursor: pointer;
+    gap: 1.6rem;
+    margin-bottom: 2.2rem;
 }
 
-.numbers li {
-    width: 100%;
-    background-color: var(--DarkishBlue);
-    padding: 1.3rem;
+.card__number-ratings li {
+    background-color: var(--GrayishBlue);
+    color: var(--MediumGray);
+    padding: 1.4rem;
     border-radius: 50%;
     flex: 1 1 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.numbers li:hover {
+.card__number-ratings li:hover {
     background-color: var(--Orange);
     color: var(--White);
+    cursor: pointer;
 }
 
 .active {
-    color: var(--White);
-    background-color: var(--MediumGrey) !important;
-
+    background-color: var(--LightGray) !important;
+    color: var(--White) !important;
 }
 
-.btn-submit {
+.card__btn-submit {
     text-transform: uppercase;
-    color: var(--White);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
     background-color: var(--Orange);
+    color: var(--White);
+    width: 100%;
     border: none;
-    border-radius: 1.6rem;
-    padding: 0.8rem;
+    padding: 1rem;
+    border-radius: 2rem;
     cursor: pointer;
-    margin-top: 1.2rem;
-    transition: .3s;
-    letter-spacing: 1.1;
+    transition: 0.3s;
 }
 
-.btn-submit:hover {
-    color: var(--Orange);
+.card__btn-submit:hover {
     background-color: var(--White);
+    color: var(--Orange);
 }
 
 .attribution {
