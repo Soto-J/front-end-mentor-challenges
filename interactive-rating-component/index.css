@@ -107,6 +107,10 @@ body {
     transition: 0.3s;
 }
 
+.card__submission {
+
+}
+
 .card__btn-submit:hover {
     background-color: var(--White);
     color: var(--Orange);
