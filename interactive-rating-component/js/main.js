@@ -1,7 +1,15 @@
 "use strict";
 
 const ratingList = document.querySelectorAll("li");
-const btnSubmit = document.querySelector(".card__btn-submit");
+const btnSubmit = document.querySelector(".card__ratings-btn-submit");
+
+const cardRating = document.querySelector(".card__ratings");
+const cardSubmission = document.querySelector(".card__submission");
+const SubmissionSubHeader = document.querySelector(
+    ".card__submission-sub-header"
+);
+
+let currentActive;
 
 ratingList.forEach((rating) => {
     rating.addEventListener("click", (e) => {
@@ -11,13 +19,12 @@ ratingList.forEach((rating) => {
         });
         // Setting the clicked active
         rating.classList.add("active");
+        currentActive = rating.textContent;
     });
 });
 
 btnSubmit.addEventListener("click", () => {
-    ratingList.forEach((rating) => {
-        if (rating.classList.contains("active")) {
-            console.log("Hello");
-        }
-    });
+    cardRating.style.display = "none";
+    cardSubmission.style.display = "block";
+    SubmissionSubHeader.textContent = `You selected ${currentActive} out of 5`;
 });

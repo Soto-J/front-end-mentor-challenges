@@ -40,40 +40,45 @@ body {
 
 .card {
     background-color: var(--DarkBlue);
-    padding: 2.6rem;
+    padding: 3rem;
     border-radius: 2.2rem;
-    max-width: 35rem;
+    max-width: 40rem;
 }
 
-.card__star-icon {
+.card__ratings {
+    display: auto;
+}
+
+.card__ratings-star-icon {
     padding: 1.6rem;
     border-radius: 50%;
     background-color: var(--GrayishBlue);
     margin-bottom: 2rem;
 }
 
-.card__header {
+.card__ratings-header {
     color: var(--White);
+    font-size: 2em;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.card__description {
+.card__ratings-description {
     color: var(--MediumGray);
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 3rem;
 }
 
-.card__number-ratings {
+.card__ratings-numbers {
     display: flex;
     list-style: none;
     text-align: center;
-    gap: 1.6rem;
+    gap: 2.2rem;
     margin-bottom: 2.2rem;
 }
 
-.card__number-ratings li {
+.card__ratings-numbers  li {
     background-color: var(--GrayishBlue);
     color: var(--MediumGray);
     padding: 1.4rem;
@@ -82,7 +87,7 @@ body {
     transition: 0.3s;
 }
 
-.card__number-ratings li:hover {
+.card__ratings-numbers li:hover {
     background-color: var(--Orange);
     color: var(--White);
     cursor: pointer;
@@ -93,7 +98,7 @@ body {
     color: var(--White) !important;
 }
 
-.card__btn-submit {
+.card__ratings-btn-submit {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.1rem;
@@ -107,19 +112,43 @@ body {
     transition: 0.3s;
 }
 
-.card__submission {
-
-}
-
-.card__btn-submit:hover {
+.card__ratings-btn-submit:hover {
     background-color: var(--White);
     color: var(--Orange);
 }
 
+/* ********** Submission window *********** */
+.card__submission {
+    display: none;
+    text-align: center;
+    margin: 1.4rem 0;
+}
+
+.card__submission-sub-header {
+    color: var(--Orange);
+    background-color: var(--GrayishBlue);
+    display: inline-block;
+    border-radius: 4rem;
+    padding: .8rem 2rem;
+    margin-top: 2rem;
+}
+
+.card__submission-header {
+    color: var(--White);
+    margin-top: 2.2rem;
+}
+
+.card__submission-description {
+    color: var(--MediumGray);
+    margin-top: 1.4rem;
+}
+
+/* *************************** */
+
 .attribution {
     font-size: 1.1rem;
     text-align: center;
-    color: var(--White);
+    color: var(--MediumGray);
     margin-top: 1.2rem;
 }
 .attribution a {

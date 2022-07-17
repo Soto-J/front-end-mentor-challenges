@@ -20,26 +20,43 @@
     </head>
     <body>
         <main class="card">
-            <img
-                src="./images/icon-star.svg"
-                alt="Star Icon"
-                class="card__star-icon"
-            />
-            <h1 class="card__header">How did we do?</h1>
-            <p class="card__description">
-                Please let us know how we did with your support request. All
-                feedback is appreciated to help us improve our offering!
-            </p>
+            <section class="card__ratings">
+                <img
+                    src="./images/icon-star.svg"
+                    alt="Star Icon"
+                    class="card__ratings-star-icon"
+                />
+                <h1 class="card__ratings-header">How did we do?</h1>
+                <p class="card__ratings-description">
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve our offering!
+                </p>
 
-            <ul class="card__number-ratings">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
+                <ul class="card__ratings-numbers">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
 
-            <button class="card__btn-submit">Submit</button>
+                <button class="card__ratings-btn-submit">Submit</button>
+            </section>
+
+            <section class="card__submission">
+                <img
+                    src="./images/illustration-thank-you.svg"
+                    alt="Thank you!"
+                />
+                <p class="card__submission-sub-header">
+                    You selected 4 out of 5
+                </p>
+                <h1 class="card__submission-header">Thank you!</h1>
+                <p class="card__submission-description">
+                    We appreciate you taking the time to give a rating. If you
+                    ever need more support, don't hesitate to get in touch!
+                </p>
+            </section>
         </main>
         <footer class="attribution">
             Challenge by
@@ -53,13 +70,3 @@
     </body>
     <script src="./js/main.js"></script>
 </html>
-
-<section class="card__submission">
-    <img src="./images/illustration-thank-you.svg" alt="Thank you!">
-    <p>You selected 4 out of 5 Thank</p>
-    <h1 class="card__submission-header">Thank you!</h1>
-    <p class="card__submission-">
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don't hesitate to get in touch!
-    </p>
-</section>
