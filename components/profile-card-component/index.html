@@ -20,31 +20,42 @@
     </head>
     <body>
         <main class="card">
-            <section class="card-top">
-                <div class="card-bg"></div>
-                <img src="./images/image-victor.jpg" alt="Picture of Victor" class="photo">
-                <div class="info">
-                    <div class="name"><span> Victor Crest</span> 26 </div>
+            <section class="card__top">
+                <div class="test">
+                    <img
+                        src="./images/bg-pattern-card.svg"
+                        alt="Background"
+                        class="card-bg"
+                    />
+                </div>
+
+                <img
+                    src="./images/image-victor.jpg"
+                    alt="Picture of Victor"
+                    class="card__top-photo"
+                />
+                <div class="card__top-info">
+                    <div class="info">
+                        <span class="name"> Victor Crest</span> 26
+                    </div>
                     <div class="location">London</div>
                 </div>
             </section>
 
-            <section class="LR-padding">
-                <ul class="stats-list">
-                    <li>
-                        <div class="stats-num">80K</div>
-                        <span>Followers</span>
-                    </li>
-                    <li>
-                        <div class="stats-num">803K</div>
-                        <span>Likes</span>
-                    </li>
-                    <li>
-                        <div class="stats-num">1.4K</div>
-                        <span>Photos</span>
-                    </li>
-                </ul>
-            </section>
+            <ul class="card__stats-list">
+                <li>
+                    <div class="stats-num">80K</div>
+                    <p>Followers</p>
+                </li>
+                <li>
+                    <div class="stats-num">803K</div>
+                    <p>Likes</p>
+                </li>
+                <li>
+                    <div class="stats-num">1.4K</div>
+                    <p>Photos</p>
+                </li>
+            </ul>
         </main>
         <div class="attribution">
             Challenge by
