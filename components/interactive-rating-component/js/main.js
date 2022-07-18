@@ -24,7 +24,9 @@ ratingList.forEach((rating) => {
 });
 
 btnSubmit.addEventListener("click", () => {
-    cardRating.style.display = "none";
-    cardSubmission.style.display = "block";
-    SubmissionSubHeader.textContent = `You selected ${currentActive} out of 5`;
+    if (currentActive) {
+        cardRating.style.display = "none";
+        cardSubmission.style.display = "block";
+        SubmissionSubHeader.textContent = `You selected ${currentActive} out of 5`;
+    }
 });
