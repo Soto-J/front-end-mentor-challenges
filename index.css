@@ -1,5 +1,6 @@
 :root {
     --Cream: #f2ebe3;
+    --White: #ffffff;
 }
 
 *,
@@ -40,14 +41,13 @@ body {
 }
 
 .section {
-    background-color: #fff;
+    background-color: var(--White);
     border-radius: 0.8rem;
-    padding: 3rem;
+    padding: 3rem 5rem;
 }
 
 .section ul {
-    margin-top: 1rem;
-    /* padding: 2rem 4rem; */
+    margin-top: 1.4rem;
     border-radius: 0.8rem;
     list-style: none;
 }
@@ -83,7 +83,5 @@ body {
 
     .section {
         padding: 1.8rem;
-    }
-    .components {
     }
 }
