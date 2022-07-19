@@ -27,19 +27,36 @@ body {
     font-family: var(--ff-KumbhSans);
     font-size: 1.8rem;
     font-weight: 400;
-
-    /* Issues setting up background */
-    background: url(./images/bg-pattern-top.svg) no-repeat left top,
-        url(./images/bg-pattern-bottom.svg) no-repeat right bottom,
-        var(--DarkCyan);
-    background-size: 30%;
-
+    background-color: var(--DarkCyan);
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    min-height: 45vh;
+    z-index: -1;
+}
+
+body::before {
+    background: url(./images/bg-pattern-top.svg) no-repeat bottom left;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+body::after {
+    background: url(./images/bg-pattern-bottom.svg) no-repeat;
+    width: 50%;
+    bottom: 0;
+    right: 0;
 }
 
 .card {
@@ -48,13 +65,11 @@ body {
     overflow: hidden;
     text-align: center;
     background-color: var(--White);
-
 }
 
 .card__top {
     position: relative;
     border-bottom: 1px solid var(--DarkGray);
-   
 }
 
 .card-bg {
