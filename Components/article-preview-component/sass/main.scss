@@ -1,0 +1,97 @@
+@import "./abstracts/variables";
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $font-size-13px;
+    font-family: $font-family-Manrope;
+    background-color: $color-LightGrayishBlue;
+}
+
+.card {
+    max-width: 32.5rem;
+    margin: 4rem auto;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &__top-bg {
+        max-height: 22rem;
+        .top-bg {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__content {
+        background-color: #fff;
+        padding: 1.6rem 3.4rem;
+    }
+
+    &__header {
+        font-weight: $font-weight-700;
+        color: $color-VeryDarkGrayishBlue;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+    &__description {
+        font-weight: $font-weight-500;
+        color: $color-DesaturatedDarkBlue;
+        margin-top: 1.2rem;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    &__footer-photo {
+        img {
+            border-radius: 50%;
+            width: 3.6rem;
+            margin-right: 1.4rem;
+        }
+    }
+
+    &__person-info {
+    }
+
+    &__info-name {
+        columns: $color-VeryDarkGrayishBlue;
+        font-weight: $font-weight-700;
+    }
+
+    &__info-date {
+        color: $color-GrayishBlue;
+        font-weight: $font-weight-500;
+        margin-top: .2rem;
+    }
+    
+    &__share {
+      background-color: $color-LightGrayishBlue;
+      padding: .8rem;
+      border-radius: 50%;
+      margin-left: auto;
+    }
+}
+
+.attribution {
+    font-size: $font-size-13px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
