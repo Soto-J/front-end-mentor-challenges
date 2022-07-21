@@ -1,22 +1,4 @@
-@import "./abstracts/variables";
-
-*,
-*::after,
-*::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: $font-size-13px;
-    font-family: $font-family-Manrope;
-    background-color: $color-LightGrayishBlue;
-}
+@import "./base";
 
 .card {
     max-width: 32.5rem;
@@ -25,6 +7,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &__top-bg {
         max-height: 22rem;
@@ -35,27 +18,64 @@ body {
     }
 
     &__content {
-        background-color: #fff;
+        background-color: $Color-white;
         padding: 1.6rem 3.4rem;
     }
 
     &__header {
         font-weight: $font-weight-700;
-        color: $color-VeryDarkGrayishBlue;
+        color: $Color-desaturated-dark-Blue;
         margin-top: 1rem;
         font-size: 1.6rem;
     }
 
     &__description {
         font-weight: $font-weight-500;
-        color: $color-DesaturatedDarkBlue;
+        color: $Color-desaturated-dark-Blue;
         margin-top: 1.2rem;
+    }
+
+    .btn-share {
+        cursor: pointer;
     }
 
     &__footer {
         display: flex;
         align-items: center;
         margin-top: 3rem;
+
+        &-active {
+            // ACTIVE STATE
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            padding: 1.6rem 3.4rem;
+            text-transform: uppercase;
+            background-color: $Color-desaturated-dark-Blue;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            color: $Color-grayish-blue;
+            letter-spacing: 4px;
+            gap: 1.6rem;
+
+            display: none;
+
+            .social-media-icon {
+                width: 1.8rem;
+            }
+
+            .pinterest {
+                width: 2.2rem;
+            }
+
+            &-share-icon {
+                margin-left: auto;
+                background-color: $Color-grayish-blue;
+                border-radius: 50%;
+                padding: 0.6rem;
+            }
+        }
     }
 
     &__footer-photo {
@@ -66,25 +86,22 @@ body {
         }
     }
 
-    &__person-info {
-    }
-
     &__info-name {
-        columns: $color-VeryDarkGrayishBlue;
+        columns: $Color-desaturated-dark-Blue;
         font-weight: $font-weight-700;
     }
 
     &__info-date {
-        color: $color-GrayishBlue;
+        color: $Color-grayish-blue;
         font-weight: $font-weight-500;
-        margin-top: .2rem;
+        margin-top: 0.2rem;
     }
-    
+
     &__share {
-      background-color: $color-LightGrayishBlue;
-      padding: .8rem;
-      border-radius: 50%;
-      margin-left: auto;
+        background-color: $Color-light-grayish-blue;
+        padding: 0.8rem;
+        border-radius: 50%;
+        margin-left: auto;
     }
 }
 
@@ -94,4 +111,7 @@ body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 30em) {
 }

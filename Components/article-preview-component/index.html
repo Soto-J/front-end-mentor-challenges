@@ -19,6 +19,7 @@
         <title>Frontend Mentor | Article preview component</title>
     </head>
     <body>
+        <script defer src="./js/main.js"></script>
         <main class="card">
             <picture class="card__top-bg">
                 <img
@@ -51,13 +52,38 @@
                         <div class="card__info-name">Michelle Appleton</div>
                         <div class="card__info-date">28 Jun 2020</div>
                     </div>
-                    <div class="card__share">
-                        <img src="./images/icon-share.svg" alt="share" />
+                    <div class="btn-share card__share">
+                        <img
+                            src="./images/icon-share.svg"
+                            alt="share"
+                            class="card__footer-active-share-icon-1"
+                        />
                     </div>
-                    <!-- <div>share</div>
-                    <img src="./images/icon-facebook.svg" alt="">
-                    <img src="./images/icon-twitter.svg" alt="">
-                    <img src="./images/icon-pinterest.svg" alt=""> -->
+
+                    <div class="card__footer-active">
+                        <div class="">share</div>
+                        <img
+                            src="./images/icon-facebook.svg"
+                            alt="Facebook Icon"
+                            class="social-media-icon"
+                        />
+                        <img
+                            src="./images/icon-twitter.svg"
+                            alt="Twitter Icon"
+                            class="social-media-icon"
+                        />
+                        <img
+                            src="./images/icon-pinterest.svg"
+                            alt="Pinterest Icon"
+                            class="social-media-icon pinterest"
+                        />
+                        <div class="btn-share card__footer-active-share-icon">
+                            <img
+                                src="./images/icon-share-2.svg"
+                                alt="share icon"
+                            />
+                        </div>
+                    </div>
                 </footer>
             </section>
         </main>

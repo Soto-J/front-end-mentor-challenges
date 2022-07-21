@@ -13,7 +13,7 @@ html {
 body {
   font-size: 1.3rem;
   font-family: "Manrope", sans-serif;
-  background-color: hsl(210deg, 46%, 95%);
+  background-color: #ecf2f8;
 }
 
 .card {
@@ -23,6 +23,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .card__top-bg {
   max-height: 22rem;
@@ -32,24 +33,54 @@ body {
   display: block;
 }
 .card__content {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1.6rem 3.4rem;
 }
 .card__header {
   font-weight: 700;
-  color: hsl(217deg, 19%, 35%);
+  color: #6d7f97;
   margin-top: 1rem;
   font-size: 1.6rem;
 }
 .card__description {
   font-weight: 500;
-  color: hsl(214deg, 17%, 51%);
+  color: #6d7f97;
   margin-top: 1.2rem;
+}
+.card .btn-share {
+  cursor: pointer;
 }
 .card__footer {
   display: flex;
   align-items: center;
   margin-top: 3rem;
+}
+.card__footer-active {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1.6rem 3.4rem;
+  text-transform: uppercase;
+  background-color: #6d7f97;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: #9eafc2;
+  letter-spacing: 4px;
+  gap: 1.6rem;
+  display: none;
+}
+.card__footer-active .social-media-icon {
+  width: 1.8rem;
+}
+.card__footer-active .pinterest {
+  width: 2.2rem;
+}
+.card__footer-active-share-icon {
+  margin-left: auto;
+  background-color: #9eafc2;
+  border-radius: 50%;
+  padding: 0.6rem;
 }
 .card__footer-photo img {
   border-radius: 50%;
@@ -57,17 +88,17 @@ body {
   margin-right: 1.4rem;
 }
 .card__info-name {
-  -moz-columns: hsl(217deg, 19%, 35%);
-       columns: hsl(217deg, 19%, 35%);
+  -moz-columns: #6d7f97;
+       columns: #6d7f97;
   font-weight: 700;
 }
 .card__info-date {
-  color: hsl(212deg, 23%, 69%);
+  color: #9eafc2;
   font-weight: 500;
   margin-top: 0.2rem;
 }
 .card__share {
-  background-color: hsl(210deg, 46%, 95%);
+  background-color: #ecf2f8;
   padding: 0.8rem;
   border-radius: 50%;
   margin-left: auto;
