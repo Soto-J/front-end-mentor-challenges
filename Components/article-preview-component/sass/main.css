@@ -16,6 +16,15 @@ body {
   background-color: #ecf2f8;
 }
 
+.attribution {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
 .card {
   max-width: 32.5rem;
   margin: 4rem auto;
@@ -104,11 +113,19 @@ body {
   margin-left: auto;
 }
 
-.attribution {
-  font-size: 1.3rem;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
+@media (min-width: 50em) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    flex-direction: row;
+    max-width: 65rem;
+  }
+  .card__top-bg .top-bg {
+    min-height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

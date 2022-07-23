@@ -30,3 +30,11 @@ body {
     font-family: $font-family-Manrope;
     background-color: $Color-light-grayish-blue;
 }
+
+.attribution {
+    font-size: $font-size-13px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

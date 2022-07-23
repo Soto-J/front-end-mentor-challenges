@@ -105,13 +105,23 @@
     }
 }
 
-.attribution {
-    font-size: $font-size-13px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+@media (min-width: 50em) {      
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        flex-direction: row;
+        max-width: 65rem;
 
-@media (min-width: 30em) {
+        &__top-bg {
+            
+            .top-bg {
+                min-height: 100%;
+            }
+        }
+    }
 }
