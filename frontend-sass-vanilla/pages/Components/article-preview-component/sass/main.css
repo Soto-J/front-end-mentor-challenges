@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: "Manrope", sans-serif;
+  background-color: #ecf2f8;
+}
+
+.attribution {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.card {
+  max-width: 32.5rem;
+  margin: 4rem auto;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card__top-bg {
+  max-height: 22rem;
+}
+.card__top-bg .top-bg {
+  width: 100%;
+  display: block;
+}
+.card__content {
+  background-color: #ffffff;
+  padding: 1.6rem 3.4rem;
+}
+.card__header {
+  font-weight: 700;
+  color: #6d7f97;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+.card__description {
+  font-weight: 500;
+  color: #6d7f97;
+  margin-top: 1.2rem;
+}
+.card .btn-share {
+  cursor: pointer;
+  position: relative;
+}
+.card__footer {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.card__footer-active {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1.6rem 3.4rem;
+  text-transform: uppercase;
+  background-color: #6d7f97;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: #9eafc2;
+  letter-spacing: 4px;
+  gap: 1.6rem;
+  display: none;
+}
+.card__footer-active .social-media-icon {
+  width: 1.8rem;
+}
+.card__footer-active .pinterest {
+  width: 2.2rem;
+}
+.card__footer-active-share-icon {
+  margin-left: auto;
+  background-color: #9eafc2;
+  border-radius: 50%;
+  padding: 0.6rem;
+}
+.card__footer-photo img {
+  border-radius: 50%;
+  width: 3.6rem;
+  margin-right: 1.4rem;
+}
+.card__info-name {
+  -moz-columns: #6d7f97;
+       columns: #6d7f97;
+  font-weight: 700;
+}
+.card__info-date {
+  color: #9eafc2;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+.card__share {
+  background-color: #ecf2f8;
+  padding: 0.8rem;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+@media (min-width: 50em) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    flex-direction: row;
+    max-width: 65rem;
+  }
+  .card__top-bg .top-bg {
+    min-height: 100%;
+  }
+  .card__share {
+    position: relative;
+  }
+  .card__footer-active {
+    padding: 0.2rem;
+    position: absolute;
+    max-width: 22rem;
+    border-radius: 0.6rem;
+  }
+}/*# sourceMappingURL=main.css.map */

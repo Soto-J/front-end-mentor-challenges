@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+
+  <body
+    class="font-HankenGrotesk h-screen flex flex-col justify-center items-center text-lg"
+  >
+    <div class="rounded-[1.6rem] overflow-hidden flex shadow-lg max-w-3xl">
+      <section
+        class="bg-gradient-to-b from-Lightslateblue to-Lightroyalblue text-Lightlavender flex-1 text-center rounded-[1.6rem] py-7 px-10"
+      >
+        <h2 class="">Your Result</h2>
+        <!--  -->
+        <div
+          class="bg-gradient-to-b from-Persianblue to-Violetblue flex flex-col justify-center items-center rounded-full h-10 w-10 p-20 my-8 mx-auto"
+        >
+          <div class="text-Paleblue text-[4rem] mb-3">76</div>
+          <div class="w-20">of 100</div>
+        </div>
+        <!--  -->
+        <h2 class="text-Paleblue text-3xl">Great</h2>
+        <p class="p-7">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+
+      <section class="flex-1 font-bold py-7 px-10">
+        <h2>Summary</h2>
+        <ul
+          class="flex flex-col my-6 gap-4 [&>li]:flex [&>li]:justify-between [&>li]:rounded-lg [&>li]:p-3"
+        >
+          <li class="bg-Lightred/10">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-reaction.svg" alt="Reaction" />
+              <span class="text-Lightred"> Reaction </span>
+            </div>
+            <div>80<span class="opacity-40"> / 100</span></div>
+          </li>
+          <li class="bg-Orangeyyellow/10">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-memory.svg" alt="Memory" />
+              <span class="text-Orangeyyellow"> Memory </span>
+            </div>
+            <div>80<span class="opacity-40"> / 100</span></div>
+          </li>
+          <li class="bg-Greenteal/10">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-verbal.svg" alt="Verbal" />
+              <span class="text-Greenteal"> Verbal </span>
+            </div>
+            <div>80<span class="opacity-40"> / 100</span></div>
+          </li>
+          <li class="bg-Cobaltblue/10">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-visual.svg" alt="Visual" />
+              <span class="text-Cobaltblue"> Visual </span>
+            </div>
+            <div>80<span class="opacity-40"> / 100</span></div>
+          </li>
+        </ul>
+        <button
+          class="bg-Darkgrayblue text-white w-full rounded-full p-4 mt-5 hover:bg-gradient-to-b hover:from-Lightslateblue hover:to-Lightroyalblue transition duration-300"
+        >
+          Continue
+        </button>
+        <button
+          class="bg-Darkgrayblue text-white w-full rounded-full p-4 mt-5 hover:bg-red-600 transition duration-300"
+        >
+          Continue
+        </button>
+      </section>
+    </div>
+
+    <div class="text-sm mt-4">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">John Soto</a>.
+    </div>
+  </body>
+</html>

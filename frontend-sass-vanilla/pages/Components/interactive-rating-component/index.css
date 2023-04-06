@@ -1,0 +1,157 @@
+:root {
+    --Orange: #fb7413;
+
+    --White: #ffffff;
+    --LightGray: #959eac;
+    --MediumGray: #7c8798;
+
+    --GrayishBlue: #273039;
+    /* --DarkishBlue: #2b3540; */
+    --DarkBlue: #252d37;
+    --VeryDarkBlue: #121417;
+
+
+    --ff-Overpass: "Overpass", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    font-size: 1.5rem;
+    font-weight: 400;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--DarkBlue);
+    padding: 3rem;
+    border-radius: 2.2rem;
+    max-width: 40rem;
+}
+
+.card__ratings {
+    display: auto;
+}
+
+.card__ratings-star-icon {
+    padding: 1.6rem;
+    border-radius: 50%;
+    background-color: var(--GrayishBlue);
+    margin-bottom: 2rem;
+}
+
+.card__ratings-header {
+    color: var(--White);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card__ratings-description {
+    color: var(--MediumGray);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+
+.card__ratings-numbers {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    gap: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+.card__ratings-numbers  li {
+    background-color: var(--GrayishBlue);
+    color: var(--MediumGray);
+    padding: 1.4rem;
+    border-radius: 50%;
+    flex: 1 1 0;
+    transition: 0.3s;
+}
+
+.card__ratings-numbers li:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--LightGray) !important;
+    color: var(--White) !important;
+}
+
+.card__ratings-btn-submit {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    background-color: var(--Orange);
+    color: var(--White);
+    width: 100%;
+    border: none;
+    padding: 1.4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card__ratings-btn-submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/* ********** Submission window *********** */
+.card__submission {
+    display: none;
+    text-align: center;
+    margin: 1.4rem 0;
+}
+
+.card__submission-sub-header {
+    color: var(--Orange);
+    background-color: var(--GrayishBlue);
+    display: inline-block;
+    border-radius: 4rem;
+    padding: .8rem 2rem;
+    margin-top: 2rem;
+}
+
+.card__submission-header {
+    color: var(--White);
+    margin-top: 2.2rem;
+}
+
+.card__submission-description {
+    color: var(--MediumGray);
+    margin-top: 1.4rem;
+}
+
+/* *************************** */
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--MediumGray);
+    margin-top: 1.2rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

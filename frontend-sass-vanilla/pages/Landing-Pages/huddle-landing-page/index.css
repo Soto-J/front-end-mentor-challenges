@@ -1,0 +1,165 @@
+:root {
+    --Violet: #674baf;
+    --VioletShadow: #36285a;
+    --SoftMagenta: #e882e8;
+    --White: #ffffff;
+    /* Fonts */
+    --ff-Poppins: "Poppins", sans-serif;
+    --ff-OpenSans: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--White);
+    background: no-repeat url(./images/bg-mobile.svg) var(--Violet);
+    font-family: var(--ff-Poppins);
+    min-height: 90vh;
+    width: 100%;
+    font-size: 1.6rem;
+
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 31rem;
+    margin: 3rem auto;
+    text-align: center;
+    gap: 5rem;
+}
+.container img {
+    width: 15rem;
+}
+
+.mockup-container img {
+    width: 100%;
+}
+
+.section-content {
+}
+
+.header {
+    font-weight: 600;
+    margin: 1.2rem;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.btn-register {
+    font-family: var(--ff-OpenSans);
+    font-weight: 400;
+    color: var(--Violet);
+    box-shadow: 0 0.2rem 0.4rem var(--VioletShadow);
+    padding: 1rem 7rem;
+    border: none;
+    border-radius: 3rem;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo-icons {
+    display: flex;
+    justify-content: center;
+}
+
+ion-icon {
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    color: var(--White);
+    padding: 0.6rem;
+    margin: 0 0.5rem;
+}
+
+.attribution {
+    color: var(--White);
+    font-size: 1.1rem;
+    text-align: center;
+}
+.attribution a {
+    color: orange;
+    /* color: hsl(228, 45%, 44%); */
+}
+
+@media (min-width: 23.4375em) {
+    body {
+        background: no-repeat url(./images/bg-desktop.svg) var(--Violet);
+    }
+
+    .container {
+        max-width: 38rem;
+    }
+}
+
+@media (min-width: 70em) {
+    body {
+        font-size: 3rem;
+    }
+
+    .container {
+        margin-top: 5rem;
+        margin-bottom: 0;
+        max-width: 145rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo-huddle {
+        grid-column: span 2;
+    }
+
+    .mockup-container {
+        grid-row: 2;
+    }
+
+    .section-content {
+        text-align: start;
+        padding: 5rem;
+    }
+
+    .header {
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .description {
+        margin-top: 2.2rem;
+        font-size: 1.8rem;
+    }
+
+    .btn-register:hover {
+        background-color: var(--SoftMagenta);
+        color: var(--White);
+    }
+
+    .logo-icons {
+        grid-column: -2;
+        justify-content: flex-end;
+        padding-right: 5rem;
+    }
+
+    .logo-icons ion-icon {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .logo-icons ion-icon:hover {
+        cursor: pointer;
+        color: var(--SoftMagenta);
+        border-color: var(--SoftMagenta);
+    }
+}

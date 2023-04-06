@@ -1,0 +1,159 @@
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    /*  */
+    --LightBrightBlue: hsl(247, 42%, 65%);
+    /*  */
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+    background-size: contain;
+    background-color: var(--PaleBlue);
+}
+
+.card-container {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 30rem;
+    max-height: 60rem;
+    background-color: 1 ;
+}
+
+.image img {
+    width: 100%;
+}
+
+.content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2rem 4rem;
+}
+
+.header {
+    font-weight: 900;
+    color: var(--DarkBlue);
+}
+
+.description {
+    color: var(--DesaturatedBlue);
+    font-size: 1.2rem;
+}
+
+.plan-container {
+    display: flex;
+    background-color: var(--VeryPaleBlue);
+    color: var(--DarkBlue);
+    border-radius: 0.8rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
+}
+
+.plan-container img {
+    max-height: 3rem;
+}
+
+.plan {
+    display: flex;
+    column-gap: 1.2rem;
+}
+
+.annual {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--DesaturatedBlue);
+}
+
+.plan-container a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--BrightBlue);
+}
+
+.plan-container a:hover {
+    color: var(--LightBrightBlue);
+}
+
+.btn-payment {
+    background-color: var(--BrightBlue);
+    color: var(--VeryPaleBlue);
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px .8rem .8rem var(--PaleBlue);
+    transition: .3s;
+}
+
+.btn-payment:hover {
+    filter: brightness(200%);
+    box-shadow: 0px 6px 6px var(--PaleBlue);
+}
+.btn-cancel {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--DesaturatedBlue);
+    font-weight: 700;
+}
+
+.btn-cancel:hover {
+    color: var(--DarkBlue);
+}
+
+.attribution {
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+

@@ -1,0 +1,140 @@
+:root {
+    /*  Primary */
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+
+    /*  Neutral */
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --ff-LeagueSpartan: "League Spartan", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat left top,
+        url(./images/bg-pattern-bottom-desktop.svg) no-repeat right bottom;
+    font-family: var(--ff-LeagueSpartan);
+    font-size: 1.5rem;
+}
+
+.main {
+    max-width: 114rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+}
+
+.main__header {
+    padding-right: 10rem;
+}
+
+.header-primary {
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: -0.2rem;
+}
+
+.description {
+    color: var(--DarkGrayishMagenta);
+    margin-top: 2.2rem;
+    line-height: 1.4;
+}
+
+.main__rating {
+}
+
+.rating {
+    background-color: var(--LightGrayishMagenta);
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    padding: 1.4rem;
+    border-radius: 0.4rem;
+    margin-top: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rating img { 
+    background-repeat: repeat-x;
+}
+
+.main__testimony-cards {
+    grid-column: -3 / -1;
+    display: flex;
+    gap: 3rem;
+}
+
+.card--2 {
+    transform: translateY(2rem);
+}
+
+.card--3 {
+    transform: translateY(4rem);
+}
+
+.testimony-card {
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 1rem;
+    color: var(--LightGrayishMagenta);
+    padding: 3rem;
+}
+
+.testimony-card__header-secondary {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.header-secondary {
+}
+
+.verified-buyer {
+    color: var(--SoftPink);
+    margin-top: 0.6rem;
+}
+
+.testimony {
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+/* *********** */
+.attribution {
+    font-size: 1.42rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+:root {
+    --Cream: #f2ebe3;
+    --White: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--Cream);
+    font-size: 2rem;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.card li {
+    margin-top: 0.6rem;
+}
+
+.header {
+    grid-column: span 2;
+}
+
+.section {
+    background-color: var(--White);
+    border-radius: 0.8rem;
+    padding: 3rem 5rem;
+}
+
+.section ul {
+    margin-top: 1.4rem;
+    border-radius: 0.8rem;
+    list-style: none;
+}
+
+.section a {
+    text-decoration: none;
+    color: #777;
+    transition: 0.3s;
+}
+
+.section a:hover {
+    color: orangered;
+}
+
+.list-components {
+}
+
+@media (max-width: 40em) {
+    .card {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 28.125em) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        grid-column: 1;
+    }
+
+    .section {
+        padding: 1.8rem;
+    }
+}

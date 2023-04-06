@@ -1,0 +1,153 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+
+    /* Neutral */
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+
+    --ff-Karla: "Karla", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--ff-Karla);
+}
+
+body {
+    font-size: 1.3rem;
+    font-weight: 400;
+    background-color: var(--LightGray);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "signup list";
+    box-shadow: 0 0 1.2rem #777;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.box {
+    padding: 2.5rem;
+}
+
+.white-bg {
+    grid-area: header;
+    background-color: #fff;
+}
+
+.white-bg h1 {
+    color: var(--Cyan);
+}
+
+.white-bg h2 {
+    color: var(--BrightYellow);
+    margin-top: 2rem;
+    font-family: 400;
+    font-size: 1.4rem;
+}
+
+.white-bg p {
+    margin-top: 0.6rem;
+    color: var(--GrayishBlue);
+}
+
+.top-content {
+    margin-top: 1.2rem;
+}
+
+.dark-cyan-bg {
+    grid-area: signup;
+    background-color: var(--Cyan);
+    color: var(--LightGray);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.dark-cyan-bg h2 {
+    font-size: 1.6rem;
+}
+
+.dark-cyan-bg span {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.price div {
+    color: rgba(218, 216, 216, 0.753);
+}
+
+.btn-sign-up {
+    background-color: var(--BrightYellow);
+    color: var(--LightGray);
+    box-shadow: 0 .2rem 1.4rem #777;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 1.2rem;
+    margin-top: 0.4rem;
+    transition: 0.3s;
+}
+
+.btn-sign-up:hover {
+    filter: brightness(85%);
+}
+
+.light-cyan-bg {
+    grid-area: list;
+    background-color: var(--Cyan);
+    filter: brightness(120%);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.light-cyan-bg ul {
+    margin-top: 1.2rem;
+    list-style: none;
+}
+
+.light-cyan-bg li {
+    margin-top: 0.4rem;
+    color: var(--LightGray);
+}
+
+.attribution {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 31.25em) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+    }
+}

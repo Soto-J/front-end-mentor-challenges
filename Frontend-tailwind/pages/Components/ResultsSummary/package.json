@@ -1,0 +1,13 @@
+{
+  "name": "resultssummary",
+  "version": "1.0.0",
+  "description": "![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/index.css -o ./css/output.css",
+    "watch": "npx tailwindcss -i ./css/index.css -o ./css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

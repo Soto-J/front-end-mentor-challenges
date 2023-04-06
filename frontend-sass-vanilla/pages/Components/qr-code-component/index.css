@@ -1,0 +1,73 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Outfit", sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: var(--LightGray);
+    font-size: 1.5rem;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    row-gap: 1.4rem;
+}
+
+.content {
+    flex: 1 1 0;
+}
+
+.qr-logo-container img {
+    width: 100%;
+    border-radius: .6rem;
+}
+
+.header {
+    padding: 0 .1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--DarkBlue);
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 1.14rem;
+    color: var(--GrayishBlue);
+}
+
+.attribution {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

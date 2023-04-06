@@ -1,0 +1,40 @@
+// COLORS
+$Color-very-dark-grayish-blue: #48556a;
+$Color-desaturated-dark-Blue: #6d7f97;
+$Color-grayish-blue: #9eafc2;
+$Color-light-grayish-blue: #ecf2f8;
+$Color-white: #ffffff;
+
+// FONTS
+$font-family-Manrope: "Manrope", sans-serif;
+$font-size-13px: 1.3rem;
+
+// FONT-WEIGHT
+$font-weight-500: 500;
+$font-weight-700: 700;
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $font-size-13px;
+    font-family: $font-family-Manrope;
+    background-color: $Color-light-grayish-blue;
+}
+
+.attribution {
+    font-size: $font-size-13px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,171 @@
+:root {
+    --SoftBlue: #8cacd9;
+    --Cyan: #00fff7;
+    --Cyan-filter: rgba(0, 255, 247, 0.473);
+
+    --bg-main-VeryDarkBlue: #0d192b;
+    --bg-card-VeryDarkBlue: #14253d;
+    --br-BlueGrey: #2f415b;
+    --White: #ffffff;
+
+    --ff-Outift: "Outfit", sans-serif;
+}
+
+/* Font Weights: 300, 400, 600 */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--ff-Outift);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg-main-VeryDarkBlue);
+    color: var(--SoftBlue);
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 35rem;
+    background-color: var(--bg-card-VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.2rem;
+    padding: 2.2rem;
+    gap: 1.2rem;
+}
+
+.card__image-logo {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.equilibrium-image {
+    width: 100%;
+    display: block;
+}
+
+.view-icon-overlay {
+    background-color: var(--Cyan-filter);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100%;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.view-icon-overlay:hover {
+    opacity: 1;
+}
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.card__header {
+    margin-top: 2.2rem;
+}
+
+.card__header a {
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.card__header a:hover {
+    color: var(--Cyan);
+}
+
+.card__description {
+    font-weight: 300;
+}
+
+.card__currency-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency-time--display {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__currency {
+    color: var(--Cyan);
+}
+
+.equilibrium-logo {
+}
+
+.equilibrium-currency {
+}
+
+.card__time-left {
+}
+
+.time-left {
+}
+
+.card__linebreak {
+    height: 0.08rem;
+    background-color: var(--SoftBlue);
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__author-img {
+    width: 3rem;
+    border: 0.1rem solid var(--White);
+    border-radius: 50%;
+}
+
+.card__author-title {
+}
+
+.author-name {
+    color: var(--White);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.author-name:hover {
+    color: var(--Cyan);
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 28.125em) {
+    html {
+        font-size: 50%;
+    }
+}

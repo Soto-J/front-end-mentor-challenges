@@ -1,0 +1,134 @@
+:root {
+    --DarkCyan: #19a2ae;
+    --VeryDarkDesaturatedBlue: #2d3248;
+    --DarkGrayishBlue: #6a6f81;
+
+    --DarkGray: #969696;
+
+    --White: #ffffff;
+
+    --ff-KumbhSans: "Kumbh Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--DarkGrayishBlue);
+    font-family: var(--ff-KumbhSans);
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: var(--DarkCyan);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    min-height: 45vh;
+    z-index: -1;
+}
+
+body::before {
+    background: url(./images/bg-pattern-top.svg) no-repeat bottom left;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+body::after {
+    background: url(./images/bg-pattern-bottom.svg) no-repeat;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+.card {
+    max-width: 33rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--White);
+}
+
+.card__top {
+    position: relative;
+    border-bottom: 1px solid var(--DarkGray);
+}
+
+.card-bg {
+    width: 100%;
+}
+
+.card__top-photo {
+    border-radius: 50%;
+    border: 0.2rem solid var(--White);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__top-info {
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.name {
+    color: var(--VeryDarkDesaturatedBlue);
+    font-weight: 700;
+}
+
+.location {
+    margin-top: 0.6rem;
+    font-size: 1.4rem;
+}
+
+.card__stats-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2.4rem 0;
+}
+
+.card__stats-list li p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.stats-num {
+    color: var(--VeryDarkDesaturatedBlue);
+    font-weight: 700;
+}
+
+.attribution {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--White);
+}
+.attribution a {
+    text-decoration: none;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+
+.attribution a:hover {
+    color: var(--DarkGrayishBlue);
+}

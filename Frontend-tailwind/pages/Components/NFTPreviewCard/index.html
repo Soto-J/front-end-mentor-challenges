@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+
+  <body
+    class="bg-mainBG font-Outfit h-screen flex flex-col justify-center items-center text-[18px]"
+  >
+    <section class="bg-cardBG text-Softblue rounded-xl w-[22rem] px-5 py-6">
+      <div class="relative rounded-lg overflow-hidden group">
+        <img class="" src="./images/image-equilibrium.jpg" alt="Equilibrium" />
+
+        <div
+          class="bg-Cyan absolute top-0 left-0 cursor-pointer flex justify-center items-center h-full w-full group transition duration-300 bg-opacity-0 group-hover:bg-opacity-50"
+        >
+          <img
+            class="opacity-0 group-hover:opacity-100 transition duration-300"
+            src="./images/icon-view.svg"
+            alt="View"
+          />
+        </div>
+      </div>
+      <div>
+        <h1 class="mt-4">
+          <a
+            class="text-white text-[20px] font-bold hover:text-Cyan transition duration-300"
+            href=""
+          >
+            Equilibrium #3429
+          </a>
+        </h1>
+
+        <p class="text-Softblue mt-4">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="flex justify-between mt-4">
+          <div class="text-Cyan flex gap-2 items-center">
+            <img src="./images/icon-ethereum.svg" alt="Ethereum" />
+            <div>0.041 ETH</div>
+          </div>
+
+          <div class="flex gap-2 items-center">
+            <img src="./images/icon-clock.svg" alt="Clock" />
+            <div>3 days left</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full p-[.3px] bg-breakColor my-4"></div>
+
+      <div class="flex items-center gap-3">
+        <img
+          class="w-7 rounded-full ring-1 ring-white"
+          src="./images/image-avatar.png"
+          alt=""
+        />
+        <p>
+          Creation of
+          <a
+            class="text-white cursor-pointer hover:text-Cyan transition duration-300"
+          >
+            Jules Wyvern
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div class="text-white text-sm mt-3">
+      Challenge by
+      <a
+        class="hover:text-red-500 transition duration-300"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+      >
+        Frontend Mentor</a
+      >. Coded by <a href="#">John Soto</a>.
+    </div>
+  </body>
+</html>

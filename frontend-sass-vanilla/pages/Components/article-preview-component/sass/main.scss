@@ -1,0 +1,147 @@
+@import "./base";
+
+.card {
+    max-width: 32.5rem;
+    margin: 4rem auto;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__top-bg {
+        max-height: 22rem;
+        .top-bg {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__content {
+        background-color: $Color-white;
+        padding: 1.6rem 3.4rem;
+    }
+
+    &__header {
+        font-weight: $font-weight-700;
+        color: $Color-desaturated-dark-Blue;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+    &__description {
+        font-weight: $font-weight-500;
+        color: $Color-desaturated-dark-Blue;
+        margin-top: 1.2rem;
+    }
+
+    .btn-share {
+        cursor: pointer;
+        position: relative;
+    }
+    
+    &__footer {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+
+        &-active {
+            // ACTIVE STATE
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            padding: 1.6rem 3.4rem;
+            text-transform: uppercase;
+            background-color: $Color-desaturated-dark-Blue;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            color: $Color-grayish-blue;
+            letter-spacing: 4px;
+            gap: 1.6rem;
+
+            display: none;
+
+            .social-media-icon {
+                width: 1.8rem;
+            }
+
+            .pinterest {
+                width: 2.2rem;
+            }
+
+            &-share-icon {
+                margin-left: auto;
+                background-color: $Color-grayish-blue;
+                border-radius: 50%;
+                padding: 0.6rem;
+            }
+        }
+    }
+
+    &__footer-photo {
+        img {
+            border-radius: 50%;
+            width: 3.6rem;
+            margin-right: 1.4rem;
+        }
+    }
+
+    &__info-name {
+        columns: $Color-desaturated-dark-Blue;
+        font-weight: $font-weight-700;
+    }
+
+    &__info-date {
+        color: $Color-grayish-blue;
+        font-weight: $font-weight-500;
+        margin-top: 0.2rem;
+    }
+
+    &__share {
+        background-color: $Color-light-grayish-blue;
+        padding: 0.8rem;
+        border-radius: 50%;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 50em) {      
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        flex-direction: row;
+        max-width: 65rem;
+
+        &__top-bg {
+            
+            .top-bg {
+                min-height: 100%;
+            }
+        }
+        &__share {
+            position: relative;
+        }
+
+        
+        &__footer {
+            &-active {
+                padding: .2rem;
+                position: absolute;
+                max-width: 22rem;
+                border-radius: .6rem;
+                // overflow: hidden;
+                // z-index: 999;
+            }
+
+            &-share-icon-1 {
+                // position: relative;
+            }
+        }
+    }
+}
