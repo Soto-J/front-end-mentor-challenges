@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main class="card">
+      <picture class="card__image-logo">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="Equilibrium"
+          class="equilibrium-image"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap"
-            rel="stylesheet"
+        <img
+          src="./images/icon-view.svg"
+          alt="View Icon"
+          class="view-icon-overlay"
         />
-        <link rel="stylesheet" href="./index.css" />
-        <title>Frontend Mentor | NFT preview card component</title>
-    </head>
-    <body>
-        <main class="card">
-            <picture class="card__image-logo">
-                <img
-                    src="./images/image-equilibrium.jpg"
-                    alt="Equilibrium"
-                    class="equilibrium-image"
-                />
-                <img
-                    src="./images/icon-view.svg"
-                    alt="View Icon"
-                    class="view-icon-overlay"
-                />
-            </picture>
+      </picture>
 
-            <section class="card__content">
-                <h1 class="card__header"><a href="#">Equilibrium #3429</a></h1>
+      <section class="card__content">
+        <h1 class="card__header"><a href="#">Equilibrium #3429</a></h1>
 
-                <p class="card__description">
-                    Our Equilibrium collection promotes balance and calm.
-                </p>
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
 
-                <div class="card__currency-time">
-                    <div class="card__currency | currency-time--display">
-                        <img
-                            src="./images/icon-ethereum.svg"
-                            alt="Ethereum Icon"
-                            class="equilibrium-logo"
-                        />
-                        <span class="equilibrium-currency">0.041 ETH</span>
-                    </div>
-                    <div class="card__time-left | currency-time--display">
-                        <img src="./images/icon-clock.svg" alt="Clock Icon" />
-                        <span class="time-left">3 days left</span>
-                    </div>
-                </div>
+        <div class="card__currency-time">
+          <div class="card__currency | currency-time--display">
+            <img
+              src="./images/icon-ethereum.svg"
+              alt="Ethereum Icon"
+              class="equilibrium-logo"
+            />
+            <span class="equilibrium-currency">0.041 ETH</span>
+          </div>
+          <div class="card__time-left | currency-time--display">
+            <img src="./images/icon-clock.svg" alt="Clock Icon" />
+            <span class="time-left">3 days left</span>
+          </div>
+        </div>
 
-                <div class="card__linebreak"></div>
+        <div class="card__linebreak"></div>
 
-                <footer class="card__author">
-                    <img
-                        src="./images/image-avatar.png"
-                        alt="Jules Wyvern"
-                        class="card__author-img"
-                    />
+        <footer class="card__author">
+          <img
+            src="./images/image-avatar.png"
+            alt="Jules Wyvern"
+            class="card__author-img"
+          />
 
-                    <div class="card__author-title">
-                        Creation of<a href="#" class="author-name">
-                            Jules Wyvern</a
-                        >
-                    </div>
-                </footer>
-            </section>
-        </main>
-
-        <footer class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#" target="_blank">John Soto</a>.
+          <div class="card__author-title">
+            Creation of<a href="#" class="author-name"> Jules Wyvern</a>
+          </div>
         </footer>
-    </body>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#" target="_blank">John Soto</a>.
+    </footer>
+  </body>
 </html>
