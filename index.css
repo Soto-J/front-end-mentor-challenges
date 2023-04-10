@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 95vh;
+  text-align: center;
+}
+
+header {
+  padding-top: 5rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
