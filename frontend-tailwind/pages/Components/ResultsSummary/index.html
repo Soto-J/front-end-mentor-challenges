@@ -16,84 +16,95 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="css/output.css" />
 
     <title>Frontend Mentor | Results summary component</title>
   </head>
-
   <body
-    class="font-HankenGrotesk h-screen flex flex-col justify-center items-center text-lg"
+    class="flex h-screen flex-col items-center justify-center font-HankenGrotesk"
   >
-    <div class="rounded-[1.6rem] overflow-hidden flex shadow-lg max-w-3xl">
+    <div class="flex max-w-2xl flex-col rounded-3xl shadow-md sm:flex-row">
+      <!-- Section 1 -->
       <section
-        class="bg-gradient-to-b from-Lightslateblue to-Lightroyalblue text-Lightlavender flex-1 text-center rounded-[1.6rem] py-7 px-10"
+        class="h-full flex-1 rounded-3xl bg-gradient-to-b from-[#7857ff] to-[#2e2be9] py-8 px-12 text-center text-[#c8c7ff]"
       >
-        <h2 class="">Your Result</h2>
-        <!--  -->
+        <h1 class="mt-12 text-xl sm:mt-0">Your Result</h1>
+        <!-- Circle -->
         <div
-          class="bg-gradient-to-b from-Persianblue to-Violetblue flex flex-col justify-center items-center rounded-full h-10 w-10 p-20 my-8 mx-auto"
+          class="mx-auto mt-5 flex h-44 w-44 flex-col items-center justify-center rounded-full bg-gradient-to-b from-[#4e21ca] to-[#2623c501]"
         >
-          <div class="text-Paleblue text-[4rem] mb-3">76</div>
-          <div class="w-20">of 100</div>
+          <div class="text-7xl font-bold text-white">76</div>
+          <div class="text-sm">of 100</div>
         </div>
-        <!--  -->
-        <h2 class="text-Paleblue text-3xl">Great</h2>
-        <p class="p-7">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
+        <div>
+          <div class="my-4 text-3xl font-semibold text-white">Great</div>
+          <div class="text-lg leading-6">
+            You scored higher than 65% of the people who have taken these tests.
+          </div>
+        </div>
       </section>
 
-      <section class="flex-1 font-bold py-7 px-10">
-        <h2>Summary</h2>
-        <ul
-          class="flex flex-col my-6 gap-4 [&>li]:flex [&>li]:justify-between [&>li]:rounded-lg [&>li]:p-3"
-        >
-          <li class="bg-Lightred/10">
-            <div class="flex gap-2">
-              <img src="./assets/images/icon-reaction.svg" alt="Reaction" />
-              <span class="text-Lightred"> Reaction </span>
+      <!-- Section 2 -->
+      <section class="flex-1 p-8 font-bold">
+        <h2 class="mb-5 text-xl">Summary</h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex justify-between rounded-lg bg-[#ff5757]/10 p-3">
+            <div class="flex gap-2 text-[#ff5757]">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt=""
+                class="inline-block"
+              />
+              Reaction
             </div>
-            <div>80<span class="opacity-40"> / 100</span></div>
-          </li>
-          <li class="bg-Orangeyyellow/10">
-            <div class="flex gap-2">
-              <img src="./assets/images/icon-memory.svg" alt="Memory" />
-              <span class="text-Orangeyyellow"> Memory </span>
+            <div>80 <span class="opacity-50">/ 100</span></div>
+          </div>
+
+          <div class="flex justify-between rounded-lg bg-[#ffb01f]/10 p-3">
+            <div class="flex gap-2 text-[#ffb01f]">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt=""
+                class="inline-block"
+              />
+              Memory
             </div>
-            <div>80<span class="opacity-40"> / 100</span></div>
-          </li>
-          <li class="bg-Greenteal/10">
-            <div class="flex gap-2">
-              <img src="./assets/images/icon-verbal.svg" alt="Verbal" />
-              <span class="text-Greenteal"> Verbal </span>
+            <div>92 <span class="opacity-50">/ 100</span></div>
+          </div>
+
+          <div class="flex justify-between rounded-lg bg-[#00bd91]/10 p-3">
+            <div class="flex gap-2 text-[#00bd91]">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt=""
+                class="inline-block"
+              />
+              Verbal
             </div>
-            <div>80<span class="opacity-40"> / 100</span></div>
-          </li>
-          <li class="bg-Cobaltblue/10">
-            <div class="flex gap-2">
-              <img src="./assets/images/icon-visual.svg" alt="Visual" />
-              <span class="text-Cobaltblue"> Visual </span>
+            <div>61 <span class="opacity-50">/ 100</span></div>
+          </div>
+
+          <div class="flex justify-between rounded-lg bg-[#1125d4]/10 p-3">
+            <div class="flex gap-2 text-[#1125d4]">
+              <img src="./assets/images/icon-visual.svg" alt="" class="" />
+              <div>Visual</div>
             </div>
-            <div>80<span class="opacity-40"> / 100</span></div>
-          </li>
-        </ul>
+            <div>72 <span class="opacity-50">/ 100</span></div>
+          </div>
+        </div>
+
         <button
-          class="bg-Darkgrayblue text-white w-full rounded-full p-4 mt-5 hover:bg-gradient-to-b hover:from-Lightslateblue hover:to-Lightroyalblue transition duration-300"
-        >
-          Continue
-        </button>
-        <button
-          class="bg-Darkgrayblue text-white w-full rounded-full p-4 mt-5 hover:bg-red-600 transition duration-300"
+          class="mt-8 w-full rounded-full bg-[#303b5a] py-3 text-[#ebf1ff]"
         >
           Continue
         </button>
       </section>
     </div>
 
-    <div class="text-sm mt-4">
+    <div class="mt-4">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor</a
       >. Coded by <a href="#">John Soto</a>.
     </div>
   </body>

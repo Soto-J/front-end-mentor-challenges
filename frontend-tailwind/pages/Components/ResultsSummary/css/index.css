@@ -1,25 +1,27 @@
-@config "../tailwind.config.js";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /*  Primary */
-  --Lightred: rgb(255, 87, 87);
-  --Orangeyyellow: rgb(255, 176, 31);
-  --Greenteal: rgb(0, 189, 145);
-  --Cobaltblue: rgb(17, 37, 212);
+  /* *Primary* */
+  --Lightred: #ff5757;
+  --Orangeyyellow: #ffb01f;
+  --Greenteal: #00bd91;
+  --Cobaltblue: #1125d4;
 
-  /* Gradients - background */
-  --Lightslateblue: rgb(120, 87, 255);
-  --Lightroyalblue: rgb(46, 43, 233);
+  /* *Gradients* */
+  /* background */
+  --Lightslateblue: #7857ff;
+  --Lightroyalblue: #2e2be9;
 
   /* Circle */
-  --Violetblue: rgb(78, 33, 202);
-  --Persianblue: rgba(36, 33, 202, 0);
+  --Violetblue: #4e21ca;
+  --Persianblue: #2421ca00;
+  --Persianblue2: #2623c501;
 
   /* Neutral */
-  --Paleblue: rgb(235, 241, 255);
-  --Lightlavender: rgb(200, 199, 255);
-  --Darkgrayblue: rgb(48, 59, 90);
+  --White: #ffffff%;
+  --Paleblue: #ebf1ff;
+  --Lightlavender: #c8c7ff;
+  --Darkgrayblue: #303b5a;
 }

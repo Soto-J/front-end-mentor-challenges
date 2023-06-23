@@ -1,13 +1,13 @@
 {
-  "name": "resultssummary",
+  "name": "results-summary-component-main",
   "version": "1.0.0",
   "description": "![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./css/index.css -o ./css/output.css",
-    "watch": "npx tailwindcss -i ./css/index.css -o ./css/output.css --watch"
+    "watch": "npx tailwindcss -i ./css/index.css -o ./css/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC"
 }
