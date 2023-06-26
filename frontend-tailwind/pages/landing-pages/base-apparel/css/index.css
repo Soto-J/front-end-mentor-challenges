@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ### Primary */
+  --desaturated-red: #ce9797;
+  --soft-red: #f96262;
+  /* ### Neutral */
+  --dark-grayish-red: #413a3a;
+
+  /* ### Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #ffffff,
+    #fff5f5
+  );
+  --gradient-secondary: linear-gradient(
+    135deg,
+    #f96262,
+    #ce9797
+  );
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body class="flex h-screen font-josefin text-[#ce9797]">
+    <div
+      class="flex-1 shrink text-center lg:text-start"
+      style="background-image: url('./images/bg-pattern-desktop.svg')"
+    >
+      <div class="p-8 lg:px-64 lg:py-16">
+        <img src="./images/logo.svg" alt="Base Apparel Logo" />
+      </div>
+      <!-- Mobile image -->
+      <div class="">
+        <img src="./images/hero-mobile.jpg" alt="" class="w-full lg:hidden" />
+      </div>
+
+      <div class="p-10 lg:mt-8 lg:px-64">
+        <h1 class="text-6xl font-light tracking-[.2em]">
+          WE'RE <span class="font-semibold text-black">COMING SOON</span>
+        </h1>
+        <p class="my-8">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <div action="" class="relative">
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="mt-4 w-full rounded-full border p-2 outline outline-[#ce9797]/50 placeholder:pl-2 placeholder:text-sm placeholder:text-[#ce9797]/70"
+          />
+          <button
+            class="absolute top-3.5 -right-0.5 rounded-full bg-[#f96262]/50 px-10 py-3 shadow-xl"
+          >
+            <img src="./images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+
+        <footer class="mt-16">
+          <p class="">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">John Soto</a>.
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <div class="hidden lg:block">
+      <img src="./images/hero-desktop.jpg" alt="" class="h-full w-full" />
+    </div>
+  </body>
+</html>
